@@ -1,0 +1,64 @@
+{
+  "name": "raven-carousel",
+  "version": "1.0.7",
+  "description": "Simple & dependency free carousel.",
+  "main": "./src/core/core.js",
+  "author": "Ben Obee",
+  "license": "ISC",
+  "scripts": {
+    "test": "mocha",
+    "start": "webpack --progress --colors --watch",
+    "watch": "./node_modules/.bin/webpack -d --watch --colors",
+    "build": "set PROD_ENV=true&&babel src -d dist&&documentation build --output ./README.md --format md",
+    "dev": "set PROD_ENV=false&&webpack-dev-server ./test/app.js --hot --watch --colors",
+    "lint": "eslint source"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benobee/raven-carousel.git"
+  },
+  "keywords": [
+    "carousel",
+    "javascript",
+    "es6"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-runtime": "^6.23.0",
+    "es6-promise": "^4.1.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-config-google": "^0.9.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-watch": "^3.0.1",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "html-loader": "^0.5.1",
+    "imports-loader": "^0.7.1",
+    "json-loader": "^0.5.4",
+    "path": "^0.12.7",
+    "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/benobee/raven-carousel/issues"
+  },
+  "homepage": "https://github.com/benobee/raven-carousel#readme"
+}
